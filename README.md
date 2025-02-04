@@ -1,7 +1,3 @@
-Here’s a **README.md** based on everything you've provided:
-
----
-
 # Document Management and RAG-based Q&A API
 
 ---
