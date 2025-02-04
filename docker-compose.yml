@@ -1,0 +1,38 @@
+services:
+  postgres:
+    image: ankane/pgvector
+    container_name: postgres
+    environment:
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: llm_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - app_network
+
+  fastapi:
+    build: .
+    container_name: fastapi-container
+    depends_on:
+      - postgres
+    environment:
+      - POSTGRES_USER=user
+      - POSTGRES_PASSWORD=password
+      - POSTGRES_DB=llm_db
+      - POSTGRES_HOST=postgres
+      - POSTGRES_PORT=5432
+      - OLLAMA_MODEL=llama3.1:8b
+    ports:
+      - "8000:8000"
+      - "11434:11434"
+    networks:
+      - app_network
+
+volumes:
+  postgres_data:
+
+networks:
+  app_network:
