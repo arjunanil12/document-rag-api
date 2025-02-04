@@ -101,7 +101,6 @@ For detailed examples and API documentation, please refer to the [API Endpoints 
 - **Enhanced Document Ingestion**:
   - Support for multiple file types (e.g., HTML, CSV, JSON).
   - Semantic chunking and duplicate removal.
-  - Overlapping chunks for better context retention.
 
 - **Advanced Query Processing**:
   - Query rewriting and expansion (e.g., synonyms, keyword expansion).
