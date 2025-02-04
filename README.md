@@ -4,9 +4,6 @@ Here’s a **README.md** based on everything you've provided:
 
 # Document Management and RAG-based Q&A API
 
-**Version:** 1.0  
-**Last Updated:** [Date]
-
 ---
 
 ### 🚀 **Overview**
