@@ -33,9 +33,7 @@ This API provides a comprehensive solution for document management, embedding-ba
 | [Testing Strategy](#testing-strategy) | Information on testing framework and approach.                              |
 | [Note](#note)                   | A personal note from the developer regarding the project's current status.   |
 
----
 
-Here’s the reformatted **Installation & Setup** section for clarity:
 
 ---
 
